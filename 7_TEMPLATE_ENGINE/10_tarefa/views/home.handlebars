@@ -1,0 +1,9 @@
+<h1>Olá Handlebars</h1>
+<h2>Segue a lista dos Carros:</h2>
+<ul>
+    {{#each cars}}
+        <li>
+            <a href="/carro/{{this.id}}">{{this.nome}} - {{this.marca}}</a>
+        </li>
+    {{/each}}
+</ul>
